@@ -7,14 +7,14 @@ $ bs target/debug/a05_calculate_and_print
 BugStalker greets
 
 (bs) break calculation_single_value
-New breakpoint 1 at 0x0000000000FCE7: /home/gy/my_project/Rust_Lang/111/Rust_Debugging_BugStalker/01_BugStalker_tutorial/a05_calculate_and_print/src/main.rs:7
+New breakpoint 1 at 0x0000000000FCE7: /home/01_BugStalker_tutorial/a05_calculate_and_print/src/main.rs:7
 
 (bs) r
-Hit breakpoint 1 at 0x00555555563CE7: /home/gy/my_project/Rust_Lang/111/Rust_Debugging_BugStalker/01_BugStalker_tutorial/a05_calculate_and_print/src/main.rs:7
+Hit breakpoint 1 at 0x00555555563CE7: /home/01_BugStalker_tutorial/a05_calculate_and_print/src/main.rs:7
    7     let mut int8 = 1_i8;
 
 (bs) source 10
-a05_calculate_and_print::calculation_single_value at /home/gy/my_project/Rust_Lang/111/Rust_Debugging_BugStalker/01_BugStalker_tutorial/a05_calculate_and_print/src/main.rs:7
+a05_calculate_and_print::calculation_single_value at /home/01_BugStalker_tutorial/a05_calculate_and_print/src/main.rs:7
    1 use std::sync::Mutex;
    2 use std::thread;
    3 use std::time::Duration;
@@ -38,11 +38,11 @@ a05_calculate_and_print::calculation_single_value at /home/gy/my_project/Rust_La
   21
 
 (bs) b calculation_four_value
-New breakpoint 2 at 0x0000000000FEA7: /home/gy/my_project/Rust_Lang/111/Rust_Debugging_BugStalker/01_BugStalker_tutorial/a05_calculate_and_print/src/main.rs:17
+New breakpoint 2 at 0x0000000000FEA7: /home/01_BugStalker_tutorial/a05_calculate_and_print/src/main.rs:17
 (bs) r
 Restart a program?
 (bs y/n) y
-Hit breakpoint 3 at 0x00555555563CE7: /home/gy/my_project/Rust_Lang/111/Rust_Debugging_BugStalker/01_BugStalker_tutorial/a05_calculate_and_print/src/main.rs:7
+Hit breakpoint 3 at 0x00555555563CE7: /home/01_BugStalker_tutorial/a05_calculate_and_print/src/main.rs:7
    7     let mut int8 = 1_i8;
 ───╯
 
@@ -51,7 +51,7 @@ Hit breakpoint 3 at 0x00555555563CE7: /home/gy/my_project/Rust_Lang/111/Rust_Deb
 (bs) c
 0
 6
-Hit breakpoint 4 at 0x00555555563EA7: /home/gy/my_project/Rust_Lang/111/Rust_Debugging_BugStalker/01_BugStalker_tutorial/a05_calculate_and_print/src/main.rs:17
+Hit breakpoint 4 at 0x00555555563EA7: /home/01_BugStalker_tutorial/a05_calculate_and_print/src/main.rs:17
   17     let mut a = 1_u64;
 (bs) c
 13
@@ -60,19 +60,18 @@ Hit breakpoint 4 at 0x00555555563EA7: /home/gy/my_project/Rust_Lang/111/Rust_Deb
 7
 v[2] = 4, s.b = 2
 Program exit with code: 0
-(bs) watch a
-Error: program is not being started
+
 (bs) r
 Restart a program?
 (bs y/n) y
-Hit breakpoint 5 at 0x00555555563CE7: /home/gy/my_project/Rust_Lang/111/Rust_Debugging_BugStalker/01_BugStalker_tutorial/a05_calculate_and_print/src/main.rs:7
+Hit breakpoint 5 at 0x00555555563CE7: /home/01_BugStalker_tutorial/a05_calculate_and_print/src/main.rs:7
    7     let mut int8 = 1_i8;
 
 (bs) b calculation_global_value
-New breakpoint 7 at 0x00000000010104: /home/gy/my_project/Rust_Lang/111/Rust_Debugging_BugStalker/01_BugStalker_tutorial/a05_calculate_and_print/src/main.rs:34
+New breakpoint 7 at 0x00000000010104: /home/01_BugStalker_tutorial/a05_calculate_and_print/src/main.rs:34
 
 (bs) source 10
-a05_calculate_and_print::calculation_single_value at /home/gy/my_project/Rust_Lang/111/Rust_Debugging_BugStalker/01_BugStalker_tutorial/a05_calculate_and_print/src/main.rs:7
+a05_calculate_and_print::calculation_single_value at /home/01_BugStalker_tutorial/a05_calculate_and_print/src/main.rs:7
    1 use std::sync::Mutex;
    2 use std::thread;
    3 use std::time::Duration;
@@ -118,7 +117,7 @@ a05_calculate_and_print::calculation_single_value at /home/gy/my_project/Rust_La
   14 }
 (bs) next
 
-a05_calculate_and_print::main at /home/gy/my_project/Rust_Lang/111/Rust_Debugging_BugStalker/01_BugStalker_tutorial/a05_calculate_and_print/src/main.rs:109
+a05_calculate_and_print::main at /home/01_BugStalker_tutorial/a05_calculate_and_print/src/main.rs:109
  109     calculation_four_value();
 
 (bs) next
@@ -144,7 +143,7 @@ Program exit with code: 0
 (bs) r
 Restart a program?
 (bs y/n) y
-Hit breakpoint 10 at 0x00555555563CE7: /home/gy/my_project/Rust_Lang/111/Rust_Debugging_BugStalker/01_BugStalker_tutorial/a05_calculate_and_print/src/main.rs:7
+Hit breakpoint 10 at 0x00555555563CE7: /home/01_BugStalker_tutorial/a05_calculate_and_print/src/main.rs:7
    7     let mut int8 = 1_i8;
 
 (bs) watch GLOBAL_1
@@ -160,27 +159,27 @@ Error: the size of the watch object does not fit into one of the size class (1, 
 (bs) c
 0
 6
-Hit breakpoint 9 at 0x00555555563EA7: /home/gy/my_project/Rust_Lang/111/Rust_Debugging_BugStalker/01_BugStalker_tutorial/a05_calculate_and_print/src/main.rs:17
+Hit breakpoint 9 at 0x00555555563EA7: /home/01_BugStalker_tutorial/a05_calculate_and_print/src/main.rs:17
   17     let mut a = 1_u64;
 
 
 (bs) c
 13
-Hit breakpoint 8 at 0x00555555564104: /home/gy/my_project/Rust_Lang/111/Rust_Debugging_BugStalker/01_BugStalker_tutorial/a05_calculate_and_print/src/main.rs:34
+Hit breakpoint 8 at 0x00555555564104: /home/01_BugStalker_tutorial/a05_calculate_and_print/src/main.rs:34
   34         GLOBAL_1 -= 1;
 
 (bs) next
-Hit watchpoint 1 (w) at 0x00555555564126: /home/gy/my_project/Rust_Lang/111/Rust_Debugging_BugStalker/01_BugStalker_tutorial/a05_calculate_and_print/src/main.rs:35
+Hit watchpoint 1 (w) at 0x00555555564126: /home/01_BugStalker_tutorial/a05_calculate_and_print/src/main.rs:35
 old value: a05_calculate_and_print::GLOBAL_1 = i64(1)
 new value: a05_calculate_and_print::GLOBAL_1 = i64(0)
 
 (bs) next
-Hit watchpoint 1 (w) at 0x00555555564167: /home/gy/my_project/Rust_Lang/111/Rust_Debugging_BugStalker/01_BugStalker_tutorial/a05_calculate_and_print/src/main.rs:36
+Hit watchpoint 1 (w) at 0x00555555564167: /home/01_BugStalker_tutorial/a05_calculate_and_print/src/main.rs:36
 old value: a05_calculate_and_print::GLOBAL_1 = i64(0)
 new value: a05_calculate_and_print::GLOBAL_1 = i64(3)
 
 (bs) next
-Hit watchpoint 1 (w) at 0x005555555641C5: /home/gy/my_project/Rust_Lang/111/Rust_Debugging_BugStalker/01_BugStalker_tutorial/a05_calculate_and_print/src/main.rs:36
+Hit watchpoint 1 (w) at 0x005555555641C5: /home/01_BugStalker_tutorial/a05_calculate_and_print/src/main.rs:36
 old value: a05_calculate_and_print::GLOBAL_1 = i64(3)
 new value: a05_calculate_and_print::GLOBAL_1 = i64(1)
 
