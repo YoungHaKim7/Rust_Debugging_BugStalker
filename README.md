@@ -1,5 +1,8 @@
 # Rust_Debugging_BugStalker
 
+- 한글Rust_083_Rust로 만든 디버깅(BugStalker)Morden_Debugging+_Ubuntu24.04
+  - https://youtube.com/live/fTEMN4VB6Uw?feature=share
+
 # BugStalker
 - Modern debugger for Linux x86-64. Written in Rust for Rust programs.
   - https://github.com/godzie44/BugStalker
