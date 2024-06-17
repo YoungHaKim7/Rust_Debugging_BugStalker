@@ -33,4 +33,6 @@ cargo install bugstalker
 
 # tokio console
 
-- https://github.com/tokio-rs/console
+- a debugger for async rust!
+
+  - https://github.com/tokio-rs/console
