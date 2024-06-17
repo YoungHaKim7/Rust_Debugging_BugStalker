@@ -25,3 +25,6 @@ dnf install pkg-config libunwind-devel
 ```bash
 cargo install bugstalker
 ```
+
+# 사용법
+- https://github.com/godzie44/BugStalker/tree/master/doc
